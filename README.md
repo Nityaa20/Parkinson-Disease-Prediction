@@ -2,7 +2,7 @@
 
 > An AI-powered web application that predicts Parkinson's Disease from vocal biomarker measurements using Machine Learning.
 
----
+
 
 ## 📌 Overview
 
@@ -10,7 +10,7 @@ Parkinson's Disease is one of the most common neurodegenerative disorders, and *
 
 This application solves that problem by allowing users to input **22 vocal biomarker features** and receive an **instant AI-powered prediction** along with a confidence score and the top contributing factors.
 
----
+
 
 ## ✨ Features
 
@@ -21,7 +21,7 @@ This application solves that problem by allowing users to input **22 vocal bioma
 - 🔒 **Pre-trained Model** — Uses a trained Random Forest classifier loaded via joblib
 - 📐 **Scaled Inputs** — StandardScaler ensures all inputs are normalized before inference
 
----
+
 
 ## 🛠️ Tech Stack
 
@@ -35,7 +35,7 @@ This application solves that problem by allowing users to input **22 vocal bioma
 | ⚙️ Input Scaling | StandardScaler (scikit-learn) |
 | 🌐 Server | Uvicorn (ASGI) |
 
----
+
 
 ## 📁 Project Structure
 
@@ -57,7 +57,7 @@ backend/
 └── 📄 README.md                # Project documentation
 ```
 
----
+
 
 ## ⚙️ Installation & Setup
 
@@ -87,7 +87,7 @@ http://localhost:8000
 http://localhost:8000/docs   ← Interactive Swagger UI
 ```
 
----
+
 
 ## 📦 Dependencies
 
@@ -105,7 +105,7 @@ Install all at once:
 pip install fastapi uvicorn scikit-learn numpy joblib
 ```
 
----
+
 
 ## 🔗 API Endpoints
 
@@ -146,7 +146,7 @@ Accepts 22 vocal biomarker features and returns a prediction.
 }
 ```
 
----
+
 
 ## 🧪 How It Works
 
@@ -168,7 +168,7 @@ User Input (22 vocal features)
 4. **NumPy** computes class probabilities and feature importances
 5. Results are returned with **prediction label + confidence %**
 
----
+
 
 ## 📊 Dataset
 
@@ -191,7 +191,7 @@ This model was trained on the **UCI Parkinson's Disease Dataset**.
 - **DFA** — Signal fractal scaling exponent
 - **PPE** — Pitch period entropy
 
----
+
 
 ## 🎯 Model Performance
 
@@ -204,7 +204,7 @@ This model was trained on the **UCI Parkinson's Disease Dataset**.
 
 > Model trained using an 80/20 train-test split with cross-validation.
 
----
+
 
 ## 🚀 Future Improvements
 
@@ -214,13 +214,13 @@ This model was trained on the **UCI Parkinson's Disease Dataset**.
 - [ ] 📉 Add SHAP visualizations for better model explainability
 - [ ] ☁️ Deploy to cloud (AWS / Render / Railway)
 
----
+
 
 ## 📄 License
 
 This project is intended for **educational and research purposes only**.
 It is **not a substitute for professional medical diagnosis**.
 
----
+
 
 > ⚠️ **Disclaimer:** This tool is an AI-based predictor and should not be used as a replacement for clinical diagnosis. Always consult a qualified medical professional.
